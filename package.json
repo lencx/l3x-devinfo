@@ -1,6 +1,6 @@
 {
   "name": "l3x-devinfo",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Get developer information",
   "main": "dist/main.js",
   "repository": {
@@ -14,7 +14,7 @@
   ],
   "author": "lencx <cxin1314@gmail.com>",
   "license": "MIT",
-  "devDependencies": {
+  "dependencies": {
     "fs-extra": "^7.0.0",
     "l3x-ip": "^0.0.1"
   }

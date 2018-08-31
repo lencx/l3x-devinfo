@@ -12,7 +12,8 @@ const _platform = os.platform(),
  * @param string filename
  */
 module.exports = filename => {
-    filename = filename || __dirname + '/devinfo.json'
+    filename = filename || 'devinfo.json'
+    filename = /^\//.test(filename) ? filename.substr(1) : filename
     const writeJson = (data, print) => fs.writeJson(filename, data, {spaces: 2})
         .then(() => console.log(`\x1b[40m${filename}\x1b[0m `, print))
     let info = {

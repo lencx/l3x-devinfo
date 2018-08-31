@@ -12,6 +12,7 @@ npm install l3x-devinfo
 
 ```js
 const devinfo = require('l3x-devinfo')
-devinfo() // default: ~/devinfo.json
-devinfo('/a/b/c.json')
+
+devinfo() // default: devinfo.json
+devinfo('./a/b/c.json')
 ```
